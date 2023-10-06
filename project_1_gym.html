@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoumik Fitnessf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <style>
+        /* this is called CSS reset,Required before making any website  */
+        
+           body{
+            font-family: 'Playball', cursive;
+            margin:0px;
+            padding:0px;
+            background: url("gym1.jpeg"); 
+            color:white;
+            
+           
+           
+            
+        }.left{
+            
+            display: inline-block;
+            position: absolute;
+            left:34px;
+            top:20px;
+           
+
+
+        }.right{
+           
+            position: absolute; 
+           /* to move it right we used absolute positioning */
+           display: inline-block;
+            right:34px;
+            top:20px;
+            
+            
+           
+
+        }.mid{
+           
+            display: block;
+            width:34%;
+            margin: 20px auto;
+            /* the above 3 conditions are always needed if we have to centralize something  using margin:auto */
+            
+
+        }.nav{
+            display: inline-block;
+            /* could have been ignored if required  */
+
+        }.nav li{
+            display: inline-block;
+            /* ek sidhi line mai laane ka lia yeh kiya gaya hai  */
+            font-size: 20px;
+            
+            
+        }.nav li a{
+            color: white;
+            text-decoration: none;
+            padding :34px 10px;
+           
+        }.nav li a:hover{
+            color: white;
+            text-decoration: underline;
+            padding :34px 10px;
+            color:grey;
+           
+        }.left img{
+           width: 160px;
+           height:100px;
+            /* filter: invert(100%);
+            htis is used too change the color */
+
+        }.left div{
+            line-height: 40px;
+            font-size: 26px;
+            text-align: center;
+        }.btn{
+            font-family: 'Playball', cursive;
+            margin :0px 9px;
+            color:white;
+            background-color:black;
+            padding:4px 14px;
+            border: 2px grey solid;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            /* taki jab button pai jai toh arrow chnage ho jaye */
+        }.btn:hover{
+            background-color: grey;
+        }.container{
+            border:4px solid white;
+            margin:106px 80px;
+            padding:75px;
+            width:33%;
+             border-radius: 11px ;
+                }
+        .container form .btn{
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            margin: auto;
+        }.form-group input{
+            text-align: center;
+            font-weight: 800;
+            display: block;
+            width: 448px;
+            padding: 10px;
+            border: 2px solid red;
+            margin: 11px auto;
+            font-size: 21px;
+            border-radius:12px ;
+            font-family: 'Playball', cursive;
+            /* yaha auto islia kiya becuase hamne dsiplay block kar diya tha and width bhi de di thi toh ham eligible tha ki hum isko center kaar sake */
+            
+        }.container h1{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo -->
+            <img src="OIP (1).jpeg" alt="">
+            <div>Bhoumik's Fitness</div>
+
+           
+
+        </div >
+        <div class="mid">
+            <!-- for nav manu -->
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitneess calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            
+            <!-- right box for button -->
+            <button class="btn"> Call Us</button><button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="no action.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter you Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter you Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter you Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter you Locality">
+            </div>
+            <br>
+            <button class="btn">Submit </button>
+
+
+        </form>
+    </div>
+   
+</body>
+</html>
